@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simply Weather</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assests/favicon-16x16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo">
+        <h1 id="title">Simply Weather</h1>
+        
+    </div>
+
+    <div class="main">
+        <div class="search-box">
+            <input type="text" class="search-bar" placeholder="Search for a city">
+            <button class="search-btn">Search</button>
+        </div>
+        <div class="main-top">   
+            <div class="weather-condition">
+                <img id="weather-icon" src="" alt="">
+                <div class="weather">Sunny</div>
+
+            </div>
+            <div class="weather-info">
+                <div class="temp">25&deg;C</div>
+                <label class="switch">
+                    <input type="checkbox" id="unitToggle">
+                    <span class="slider round"></span>
+                </label>
+                <span id="unitLabel"><b>Convert to &deg;F</b></span>
+            </div>
+            <div class="curr-location">
+                <i class="bi bi-geo"></i>
+                <p id="curr-location"> Current Location</p>
+                <button id="save-btn"><i class="bi bi-bookmark"></i> Bookmark</button>
+                
+            </div>
+        </div>
+        <div class="summary">
+            <p>"Light drizzles are making the day a bit damp—take care if you're heading out."</p>
+        </div>
+        
+            <div class="weather-details" >
+                <div class="winds" id="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1247/1247767.png" alt="wind-icon"> 
+                    <span class="winds-text">5 metre/sec</span>
+                </div>
+                <div class="humidity" id="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/4148/4148460.png" alt="humidity-icon"> 
+                    <span class="humidity-text">50%</span>
+                </div>
+            </div>
+        
+        
+
+    </div>
+    <hr>
+     <div class="bookmark">
+        <h2>My bookmarks</h2>
+        <p class="infoSaved">
+            <ul class="bookmark-list"></ul>
+        </p>
+    </div> 
+   
+    <div class="footer">
+        <p id="loom">Let me explain you all the features and  how to use them, click <a target="_blank" href="https://www.loom.com/share/e029c2fb080e409bad6cd1b499ae3c7a?sid=be79152c-42ac-4504-b2f0-894a9246da73">here.</a></p>
+        <p>&copy; 2024 <a href="https://github.com/shahidhustles/">@shahidhustles</a></p>
+    </div>
+    <div class="loading-modal">
+        <img src="https://media1.tenor.com/m/UnFx-k_lSckAAAAC/amalie-steiness.gif" alt="screen buffering">
+        <button class="modal-btn">Grant Location access</button>
+    </div>
+    <!-- <div class="modal">
+        <img src="https://media1.tenor.com/m/iGHgTuJMdSEAAAAC/mouse-left-click.gif" alt="user clicking on mouse">
+        <button class=".modal-btn">Grant Location Access</button>
+    </div> -->
+    </body>
+    <script src="app.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    </html>
